@@ -38,7 +38,7 @@ class ATM {
     }
 
     public void checkBalance() {
-        System.out.println("Available Balance: ₹" + account.getBalance());
+        System.out.println("Available Balance: " + account.getBalance());
     }
 
     public void deposit(double amount) {

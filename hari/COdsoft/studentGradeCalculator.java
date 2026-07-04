@@ -1,5 +1,4 @@
 package COdsoft;
-
 import java.util.Scanner;
 
 public class studentGradeCalculator {
@@ -10,15 +9,12 @@ public class studentGradeCalculator {
         int subjects = sc.nextInt();
 
         int totalMarks = 0;
-
         for (int i = 1; i <= subjects; i++) {
             System.out.print("Enter marks for Subject " + i + ": ");
             int marks = sc.nextInt();
             totalMarks += marks;
         }
-
         double averagePercentage = (double) totalMarks / subjects;
-
         String grade;
 
         if (averagePercentage >= 90) {
@@ -34,7 +30,6 @@ public class studentGradeCalculator {
         } else {
             grade = "F";
         }
-
         System.out.println("\nTotal Marks: " + totalMarks);
         System.out.printf("Average Percentage: %.2f%%\n", averagePercentage);
         System.out.println("Grade: " + grade);

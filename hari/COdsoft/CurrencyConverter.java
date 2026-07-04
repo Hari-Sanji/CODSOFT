@@ -10,16 +10,12 @@ public class CurrencyConverter {
         System.out.println("1. INR");
         System.out.println("2. USD");
         System.out.println("3. EUR");
-
         System.out.print("Enter Base Currency: ");
         String from = sc.next().toUpperCase();
-
         System.out.print("Enter Target Currency: ");
         String to = sc.next().toUpperCase();
-
         System.out.print("Enter Amount: ");
         double amount = sc.nextDouble();
-
         double rate = 0;
 
         if (from.equals("INR") && to.equals("USD"))
@@ -36,7 +32,6 @@ public class CurrencyConverter {
             rate = 1.09;
         else if (from.equals(to))
             rate = 1;
-
         if (rate == 0) {
             System.out.println("Invalid Currency Selection");
         } else {
@@ -44,7 +39,6 @@ public class CurrencyConverter {
             System.out.printf("Converted Amount: %.2f %s%n",
                     convertedAmount, to);
         }
-
         sc.close();
     }
 }
